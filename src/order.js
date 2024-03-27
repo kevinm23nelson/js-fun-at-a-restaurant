@@ -30,8 +30,7 @@ function searchOrder (deliveryOrders, order){
     }
   }
   return false;
-}
-
+}     
 module.exports = {
   takeOrder,
   refundOrder,
