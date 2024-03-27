@@ -44,10 +44,11 @@ function removeMenuItem (restaurant, item, menuType) {
 
 function checkForFood (restaurant, foodItem) {
   for (var i = 0; i < restaurant.menus.length; i++) {
-    if (restaurant.menus[i].name === foodItem) {
+    if (restaurant.menus[i].name === foodItem.name) {
       return "Yes, we're serving " + foodItem.name + " today!";
       }
     }
+    return "Sorry, " + foodItem.name + " is not available today.";
   }
 
 module.exports = {
